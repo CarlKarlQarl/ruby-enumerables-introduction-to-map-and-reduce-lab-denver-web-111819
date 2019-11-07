@@ -44,13 +44,15 @@ end
 def reduce_to_all(source_array)
   output = 0
   source_array.length.times do |index|
-    
+    output += source_array[index]
   end
 end
 
 def reduce_to_any_true(source_array)
-  output = 0
+  output = []
   source_array.length.times do |index|
-    
+    if source_array[index] == true
+      output.push(source_array[index])
+    end
   end
 end
