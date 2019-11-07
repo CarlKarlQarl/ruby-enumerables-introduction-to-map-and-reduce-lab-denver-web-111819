@@ -39,13 +39,15 @@ def reduce_to_total(source_array, starting_point = 0)
     output += source_array[starting_point]
     starting_point += 1
   end
+  return output
 end
 
-def reduce_to_all(source_array)
+def reduce_to_all_true(source_array)
   output = 0
   source_array.length.times do |index|
     output += source_array[index]
   end
+  return output
 end
 
 def reduce_to_any_true(source_array)
@@ -55,4 +57,5 @@ def reduce_to_any_true(source_array)
       output.push(source_array[index])
     end
   end
+  return output
 end
