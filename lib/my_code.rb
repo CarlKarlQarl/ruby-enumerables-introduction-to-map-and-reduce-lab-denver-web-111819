@@ -51,11 +51,10 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-  output = []
   source_array.length.times do |index|
     if source_array[index] == true
-      output.push(source_array[index])
+      return true
     end
   end
-  return output
+  return false
 end
