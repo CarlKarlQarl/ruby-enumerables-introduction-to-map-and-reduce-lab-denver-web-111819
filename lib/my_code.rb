@@ -31,15 +31,26 @@ def map_to_square(source_array)
   return output_array
 end
 
+
 #Reducing methods
-def reduce_to_total(source_array, starting_point)
-  
+def reduce_to_total(source_array, starting_point = 0)
+  output = 0
+  while starting_point < source_array.length do
+    
+    starting_point += 1
+  end
 end
 
 def reduce_to_all(source_array)
-  
+  output = 0
+  source_array.length.times do |index|
+    
+  end
 end
 
 def reduce_to_any_true(source_array)
-  
+  output = 0
+  source_array.length.times do |index|
+    
+  end
 end
