@@ -42,11 +42,12 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  output = 0
   source_array.length.times do |index|
-    output += source_array[index]
+    if source_array[index] == false
+      return false
+    end
   end
-  return output
+  return true
 end
 
 def reduce_to_any_true(source_array)
